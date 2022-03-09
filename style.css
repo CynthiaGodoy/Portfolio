@@ -72,8 +72,13 @@ body {
 /* The sticky class is added to the header with JS when it reaches its scroll position */
 .sticky {
   position: fixed;
-  top: 0;
+  z-index: 50; /* fixed AskBCS Learning*/
   width: 100%
+}
+
+/* fixed AskBCS Learning*/
+.smallTopMargin {
+  margin-top: 24px;
 }
 
 /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
@@ -94,9 +99,11 @@ body {
 /* Centered text */
 .centered {
     position: absolute;
-    top: 20%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+    /*Flex/*
 }
 
 /* end background image------------------------------------------------------*/
@@ -154,7 +161,7 @@ p {
 }
 
 /* Begin css grid------------------------------------------------------------*/
-.image-grid {
+.containerGrid {
   --gap: 16px;
   --num-cols: 3;
   --row-height: 300px;
@@ -170,34 +177,34 @@ p {
   margin-right: 150px;
 }
 
-.image-grid > img {
+.containerGrid > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.image-grid-col-1 {
+.containerGrid-col-1 {
   grid-column: span 1;
 }
 
-.image-grid-row-2 {
+.containerGrid-row-2 {
   grid-row: span 2;
 }
 
 /* Anything udner 1024px */
 @media screen and (max-width: 1024px) {
-  .image-grid {
+  .containerGrid {
     --num-cols: 2;
     --row-height: 200px;
   }
 }
 
-/* Container holding the image and the text */
+/* Container holding the image and the text 
 .containerGrid {
   position: relative;
   width: 100px;
   height: 100px;
-}
+} */
 
 /* Smaller text inside images */
 /* .containerGrid p { */
@@ -207,15 +214,15 @@ p {
 /* } */
 
 /* Bottom right text FIGURE OUT HOW TO SIZE THE BLOCK */
-.text-block {
-  position: absolute;
-  font-size: 10px;
-  color: white;
-  top: 18em;
-  left: 0.1em;
-  width: 50px;
-  background-color: black; 
-}
+/* .text-block { */
+  /* position: absolute; */
+  /* font-size: 10px; */
+  /* color: white; */
+  /* top: 18em; */
+  /* left: 0.1em; */
+  /* width: 50px; */
+  /* background-color: black;  */
+/* } */
 /* End css grid------------------------------------------------------------*/
 
 /*Begin Footer--------------------------------------------------------------*/
