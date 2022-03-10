@@ -173,10 +173,11 @@ h5 {
 }
 
 h6 {
-  font-size: 16px;
+  font-size: 18px;
   text-transform: uppercase;
-  font-weight: normal;
-  color: white;
+  font-weight: bold;
+  color: chocolate;
+  text-decoration: none;
 }
 
 p {
@@ -233,66 +234,43 @@ p {
   }
 }
 /*Begin text over image-grid-------------------------------------------------------*/
-.containerGrid {
+
+.container-grid {
   position: relative;
-  font-family: Arial;
+  text-align: center;
+  color: white;
+  display: flex;
 }
 
-/* Bottom left text */
-.bottom-left {
+/* Ill try again after we learn JQuery
+.container-grid:hover {
+  background: white;
+  opacity: .25;
+} */
+
+.text-block {
   position: absolute;
-  bottom: 8px;
-  left: 16px;
-}
+  bottom: 10px;
+  text-align: center;
+  color: chocolate;
+  display: inline;
+  margin-left: 40px;
+  margin-right: 40px;*
+} 
 
-.bottom-left p {
+.text-block p {
   font-size: 10px;
-  color: white;
-  text-align:left;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: chocolate;
 }
 
-/* .text-block {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-  background-color: black;
-  opacity: .5;
-  color: white;
-  padding-left: 20px;
-  padding-right: 20px;
-} */
-/*End text over image-grid-------------------------------------------------------*/
+.text-block a {
+  text-decoration: none;
+  color: chocolate;
+}
 
-
-
-
-
-
-/* Container holding the image and the text 
-.containerGrid {
-  position: relative;
-  width: 100px;
-  height: 100px;
-} */
-
-/* Smaller text inside images */
-/* .containerGrid p { */
- /* font-size: 10px; */
- /* text-align: center; */
- /* color: white; */
-/* } */
-
-/* Bottom right text FIGURE OUT HOW TO SIZE THE BLOCK */
-/* .text-block { */
-  /* position: absolute; */
-  /* font-size: 10px; */
-  /* color: white; */
-  /* top: 18em; */
-  /* left: 0.1em; */
-  /* width: 50px; */
-  /* background-color: black;  */
-/* } */
-/* End css grid------------------------------------------------------------*/
+/*End text over image-grid-------------------------------------------------------*
 
 /*Begin Footer--------------------------------------------------------------*/
 .column3 {
