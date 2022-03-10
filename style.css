@@ -55,8 +55,6 @@ body {
 }
 /*end .navbar-------------------------------------------------------------------*/ 
 
-
-
 /* start navbar sticky----------------------------------------------------------*/
 
 /* Style the header */
@@ -88,7 +86,6 @@ body {
 }
 
 /* end navbar sticky----------------------------------------------------------*/
-
 /* begin background image------------------------------------------------------*/
 
 .container {
@@ -179,7 +176,7 @@ h6 {
   font-size: 16px;
   text-transform: uppercase;
   font-weight: normal;
-  text-align: center;
+  color: white;
 }
 
 p {
@@ -235,7 +232,42 @@ p {
     --row-height: 200px;
   }
 }
-  
+/*Begin text over image-grid-------------------------------------------------------*/
+.containerGrid {
+  position: relative;
+  font-family: Arial;
+}
+
+/* Bottom left text */
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+.bottom-left p {
+  font-size: 10px;
+  color: white;
+  text-align:left;
+}
+
+/* .text-block {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: black;
+  opacity: .5;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+} */
+/*End text over image-grid-------------------------------------------------------*/
+
+
+
+
+
+
 /* Container holding the image and the text 
 .containerGrid {
   position: relative;
@@ -288,26 +320,25 @@ p {
     list-style: square;
 }
 
-#footer {
+.footer {
   padding: 15px;
   background-color: #333333;
   color: white;
   text-decoration: none;
 }
 
-#footer li {
+.footer li {
   list-style: none;
   color: gray;
   font-size: 14px;
   text-align: center;
 }
 
-#footer li a {
+.footer li a {
   color: rgb(209, 207, 207);
   font-size: 14px;
   text-decoration: none;
 }
-
 
 .bold {
   color: #ffffff;
