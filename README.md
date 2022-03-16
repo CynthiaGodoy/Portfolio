@@ -26,4 +26,4 @@ Build a portfolio page from scratch to showcase skills and talents to employers 
 https://cynthiagodoy.github.io/Portfolio/
 
 ## Screenshot
-![]images/porfolioscreenshot.jpg
+![]images/PortfolioScreenshot.jpg
