@@ -22,6 +22,24 @@ Build a portfolio page from scratch to showcase skills and talents to employers 
 
 ✅Repository contains multiple descriptive commit messages, contains a README with a link to deployed project, and Screenshot.
 
+## Items to be Updated in Project
+
+📝 Add photo to the `About` section
+
+📝 Updated resume link.
+
+📝 Link to at least 2 deployed projects with 20 commits.
+
+📝 Add profile picture to GitHub.
+
+📝 Follow 2 classmates on GitHub.
+
+📝 Update to 2 screenshots of the portfolio page.
+
+📝 Update `navbar` to be collapsible.
+
+📝 Bootstrap items so page is more responsive.
+
 ## Live URL
 https://cynthiagodoy.github.io/Portfolio/
 

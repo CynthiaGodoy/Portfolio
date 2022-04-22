@@ -1,99 +1,94 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-}
-
-body {
+body { /* ENTIRE WEBSITE */
     color: #333333;
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
 }
 
 /*.navbar-------------------------------------------------------------------*/ 
-.nav-list {
-    background: white;
-    margin: 0;
-    padding: 16px; 
-    display: flex; 
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.nav-item {
-  list-style: none;
-  margin-right: 2rem;
-}
-
-.nav-item a {
+.navbar {  /* ENTIRE NAVBAR */
+  text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
-  text-decoration: none;
-  color:#333333;
-  font-size: 12px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.nav-item:first-child {
-  margin-right: auto;
-  padding-left: 16px;
-}
-
-.nav-item:first-child a {
+.navbar-brand { /*LOGO ONLY*/
   text-decoration: none;
   font-size: 18px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: 900;
   color: #333333;
 }
 
-.highlight {
+.navbar-nav { /*UL CLASS LIST*/
+  list-style: none;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.navbar-nav a { /*UL CLASS TEXT A*/
+  color: #333333;
+  text-decoration: none;
+}
+
+.navbar-nav a:hover { /*UL CLASS TEXT A HOVER*/
+  text-decoration: none;
   color: chocolate;
 }
 
-.nav-item a:hover {
-    color: chocolate;
+/* .navbar-nav > li{ 
+  padding-left:16px;
+  padding-right:16px;
+  margin-right: auto;
+} */
+
+.highlight { /*HIGHLIGHT COLOR*/
+color: chocolate;
 }
 /*end .navbar-------------------------------------------------------------------*/ 
-
-/* start navbar sticky----------------------------------------------------------*/
-
-/* Style the header */
-.header {
-  padding: 10px 16px;
-  background: white;
-}
-
-/* Page content */
-.content {
-  padding: 16px;
-}
-
-/* The sticky class is added to the header with JS when it reaches its scroll position */
-.sticky {
-  position: fixed;
-  z-index: 50; /* fixed AskBCS Learning*/
-  width: 100%
-}
-
-/* fixed AskBCS Learning*/
-.smallTopMargin {
-  margin-top: 24px;
-}
-
-/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + .content {
-  padding-top: 102px;
-}
-
-/* end navbar sticky----------------------------------------------------------*/
 /* begin background image------------------------------------------------------*/
 
 .container {
-  position: relative;
-  text-align: center;
-  color: white;
-  display: flex;
+  text-decoration: none;
 }
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Anything under 900px */
+@media screen and (max-width: 900px) {
+  .centered {
+    top: 40%
+  }
+}
+
+/* Anything under 768px */
+@media screen and (max-width: 768px) {
+  .centered {
+    top: 50%
+  }
+}
+
+/* end background image------------------------------------------------------*/
+/* begin background image------------------------------------------------------*/
+
+/* .container { */
+  /* position: relative; */
+  /* text-align: center; */
+  /* color: white; */
+  /* display: flex; */
+/* } */
+
+.container2 {
+position: relative;
+text-align: center;
+color: white;
+display: flex;
+}
+
 
 /* Centered text */
 .centered {
@@ -146,6 +141,7 @@ h2 {
   }
 
 h3 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 32px;
     color: #333333;
     text-transform: uppercase;
@@ -155,6 +151,7 @@ h3 {
 }
 
 h4 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16px;
     color: chocolate;
     text-transform: uppercase;
@@ -181,12 +178,12 @@ h6 {
 }
 
 p {
-  font-size: 16px;
+  font-size: 12px;
   color: #333333;
   text-align: left;
-  margin-left: 150px;
-  margin-right: 150px;
-  margin-bottom: 20px;
+  /* margin-left: 150px; */
+  /* margin-right: 150px; */
+  /* margin-bottom: 20px; */
 }
 
 /* Begin css grid------------------------------------------------------------*/
