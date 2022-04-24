@@ -24,121 +24,48 @@ body { /* ENTIRE WEBSITE */
   font-weight: bold;
 }
 
-.navbar-nav a { /*UL CLASS TEXT A*/
+.nav-item { /*UL CLASS TEXT A*/
   color: #333333;
   text-decoration: none;
 }
 
-.navbar-nav a:hover { /*UL CLASS TEXT A HOVER*/
+.navbar-item:hover { /*UL CLASS TEXT A HOVER*/
   text-decoration: none;
   color: chocolate;
 }
-
-/* .navbar-nav > li{ 
-  padding-left:16px;
-  padding-right:16px;
-  margin-right: auto;
-} */
 
 .highlight { /*HIGHLIGHT COLOR*/
 color: chocolate;
 }
 /*end .navbar-------------------------------------------------------------------*/ 
+
 /* begin background image------------------------------------------------------*/
 
-.container {
+.container { /*FOR ALL SECTIONS EXCEPT LARGE BACKGROUND IMAGE*/
   text-decoration: none;
 }
 
-/* Centered text */
-.centered {
+.img-overlay { /*LARGE BACKGROUND IMAGE*/
   position: absolute;
+  text-align: center;
   top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-/* Anything under 900px */
-@media screen and (max-width: 900px) {
-  .centered {
-    top: 40%
-  }
-}
-
-/* Anything under 768px */
-@media screen and (max-width: 768px) {
-  .centered {
-    top: 50%
-  }
-}
-
-/* end background image------------------------------------------------------*/
-/* begin background image------------------------------------------------------*/
-
-/* .container { */
-  /* position: relative; */
-  /* text-align: center; */
-  /* color: white; */
-  /* display: flex; */
-/* } */
-
-.container2 {
-position: relative;
-text-align: center;
-color: white;
-display: flex;
-}
-
-
-/* Centered text */
-.centered {
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-  /* Anything under 900px */
-  @media screen and (max-width: 900px) {
-    .centered {
-      top: 40%
-    }
-  }
-
-  /* Anything under 768px */
-  @media screen and (max-width: 768px) {
-    .centered {
-      top: 50%
-    }
-  }
-
 /* end background image------------------------------------------------------*/
 
-h1 {
+h1 { /*MED OVERLAY TEXT*/
     font-size: 36px;
+    color: white;
     word-wrap: break-word;
     flex-shrink: 2;
 }
 
-  /* Anything under 768px */
-  @media screen and (max-width: 768px) {
-    h1 {
-      font-size: 24px
-    }
-  }
-
-h2 {
+h2 { /*LARGE OVERLAY TEXT*/
     font-size: 18px;
     color: rgb(189, 189, 189);
-    word-wrap: break-word;
 }
-
-  /* Anything under 768px */
-  @media screen and (max-width: 768px) {
-    h2 {
-      font-size: 12px
-    }
-  }
 
 h3 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -148,6 +75,7 @@ h3 {
     text-align: center;
     margin-top: 40px;
     margin-bottom: 5px;
+    padding-top: 53px;
 }
 
 h4 {
@@ -178,112 +106,24 @@ h6 {
 }
 
 p {
-  font-size: 12px;
+  font-size: 14px;
   color: #333333;
   text-align: left;
-  /* margin-left: 150px; */
-  /* margin-right: 150px; */
-  /* margin-bottom: 20px; */
 }
 
-/* Begin css grid------------------------------------------------------------*/
-.image-grid {  
-    --gap: 16px;
-    --num-cols: 3;
-    --row-height: 300px;
-  
-    box-sizing: border-box;
-    padding: var(--gap);
-  
-    display: grid;
-    grid-template-columns: repeat(var(--num-cols), 1fr);
-    grid-auto-rows: var(--row-height);
-    gap: var(--gap);
-  }
-  
-  .image-grid > img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .image-grid-col-1 {
-    grid-column: span 1;
-  }
-  
-  .image-grid-row-2 {
-    grid-row: span 2;
-  }
-  
-  /* Anything under 1024px */
-  @media screen and (max-width: 1024px) {
-    .image-grid {
-      --num-cols: 2;
-      --row-height: 200px;
-    }
-  }
-
-  /* Anything under 768px */
-@media screen and (max-width: 768px) {
-  .image-grid {
-    --num-cols: 1;
-    --row-height: 200px;
-  }
+.bio { /*SET A MARGIN IN THE ABOUT US SECTION*/
+  margin-left: 11rem;
 }
-/*Begin text over image-grid-------------------------------------------------------*/
 
-.container-grid {
-  position: relative;
+.figure-caption {
   text-align: center;
-  color: white;
-  display: flex;
 }
 
-/* Ill try again after we learn JQuery
-.container-grid:hover {
-  background: white;
-  opacity: .25;
-} */
-
-.text-block {
-  position: absolute;
-  bottom: 10px;
+.icons {
   text-align: center;
-  color: chocolate;
-  display: inline;
-  margin-left: 40px;
-  margin-right: 40px;*
-} 
-
-.text-block p {
-  font-size: 10px;
-  text-transform: uppercase;
-  font-weight: bold;
-  color: chocolate;
 }
-
-.text-block a {
-  text-decoration: none;
-  color: chocolate;
-}
-
-/*End text over image-grid-------------------------------------------------------*
 
 /*Begin Footer--------------------------------------------------------------*/
-.column3 {
-  float: left;
-  width: 33.33%;
-  padding: 10px;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
 
 .skills-list li {
     font-size: 16px;
@@ -319,4 +159,50 @@ p {
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+/* MEDIA SCREENS-----------------------------------------------------------------*/
+
+/* ANYTHING UNDER 992px */
+@media screen and (max-width: 992px) {
+  .img-overlay {
+    top: 25%
+  }
+  .bio {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .figure-img {
+    text-align: center;
+  }
+}
+
+/* ANYTHING UNDER 768px */
+@media screen and (max-width: 768px) {
+.img-overlay {
+  top: 20%
+}
+h1 {
+  font-size: 24px;
+}
+h2 {
+  font-size: 14px;
+}
+.bio {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+}
+
+/* ANYTHING UNDER 576px */
+@media screen and (max-width: 576px) {
+.img-overlay {
+  top: 18%
+}
+h1 {
+  font-size: 18px;
+}
+h2 {
+  font-size: 10px;
+}
 }
