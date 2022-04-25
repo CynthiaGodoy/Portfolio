@@ -22,13 +22,13 @@ Build a portfolio page from scratch to showcase skills and talents to employers 
 
 ✅Repository contains multiple descriptive commit messages, contains a README with a link to deployed project, and Screenshot.
 
-## Items to be Updated in Project
+## Items Updated in Project
 
 📝 Add photo to the `About` section
 
 📝 Updated resume link.
 
-📝 Link to at least 2 deployed projects with 20 commits.
+📝 Link to at least 2 deployed projects.
 
 📝 Add profile picture to GitHub.
 
