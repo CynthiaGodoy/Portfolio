@@ -1,7 +1,7 @@
 body { /* ENTIRE WEBSITE */
-    color: #333333;
-    font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
+  color: #333333;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /*.navbar-------------------------------------------------------------------*/ 
@@ -35,7 +35,7 @@ body { /* ENTIRE WEBSITE */
 }
 
 .highlight { /*HIGHLIGHT COLOR*/
-color: chocolate;
+  color: chocolate;
 }
 /*end .navbar-------------------------------------------------------------------*/ 
 
@@ -56,52 +56,56 @@ color: chocolate;
 /* end background image------------------------------------------------------*/
 
 h1 { /*MED OVERLAY TEXT*/
-    font-size: 36px;
-    color: white;
-    word-wrap: break-word;
-    flex-shrink: 2;
+  font-size: 36px;
+  color: white;
+  word-wrap: break-word;
+  flex-shrink: 2;
 }
 
 h2 { /*LARGE OVERLAY TEXT*/
-    font-size: 18px;
-    color: rgb(189, 189, 189);
+  font-size: 18px;
+  color: rgb(189, 189, 189);
 }
 
-h3 {
+h3 { /*TITLE*/
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 32px;
-    color: #333333;
-    text-transform: uppercase;
-    text-align: center;
-    margin-top: 40px;
-    margin-bottom: 5px;
-    padding-top: 53px;
+  font-size: 32px;
+  color: #333333;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 5px;
+  padding-top: 53px;
 }
 
-h4 {
+h4 { /*SUBTITLE*/
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 16px;
-    color: chocolate;
-    text-transform: uppercase;
-    text-align: center;
-    margin-bottom: 24px;
+  font-size: 16px;
+  color: chocolate;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 24px;
 }
 
 h5 {
-  font-size: 14px;
-  color: chocolate;
+  font-size: 16px;
+  color: #333333;
   text-transform: uppercase;
-  font-weight: 300;
+  font-weight: 600;
   text-align: center;
   margin-bottom: 0;
-  margin-top: 20px;
+  text-decoration: none;
 }
 
 h6 {
-  font-size: 18px;
-  text-transform: uppercase;
-  font-weight: bold;
-  color: chocolate;
+  font-size: 14px;
+  color: #333333;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 0;
+  margin-top: 5px;
+  margin-right: 15px;
+  margin-left: 15px;
   text-decoration: none;
 }
 
@@ -125,40 +129,75 @@ p {
 
 /*Begin Footer--------------------------------------------------------------*/
 
-.skills-list li {
-    font-size: 16px;
-    color: #333333;
-    text-align: left;
-    margin-left: 150px;
-    margin-right: 150px;
-    margin-bottom: 25px;
-    list-style: square;
-}
-
-.footer {
+.footer { /*FOOTER BACKGROUND*/
   padding: 15px;
   background-color: #333333;
   color: white;
   text-decoration: none;
 }
 
-.footer li {
+.footer li { /*FOOTER TEXT*/
   list-style: none;
   color: gray;
   font-size: 14px;
   text-align: center;
 }
 
-.footer li a {
+.footer li a { /*FOOTER TEXT*/
   color: rgb(209, 207, 207);
   font-size: 14px;
   text-decoration: none;
 }
 
-.bold {
+.bold { /*BOLD LIST AT FOOTER*/
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+.img { /*SETTING IMAGES SO THAT I CAN MAKE AN OVERLAY*/
+  position: relative;
+}
+
+.overlay { /*OVERLAY LOCATION OVER WORK IMAGES*/
+  position: absolute;
+  top: 45%;
+  left: 19%;
+  width: 60%;
+  background-color: white;
+  opacity: 60%;
+}
+
+.overlay a { /*REMOVE UNDERLINE*/
+  text-decoration: none;
+  list-style: none;
+}
+
+.overlay:hover { 
+  opacity: 90%; 
+} 
+
+.overlay h5 {
+  color: #333;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.overlay h6 {
+  color: #333333;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.border { 
+  padding: 15px;
+  border-style: none;
+}
+
+.img-fluid { /*CENTER THE ICONS*/
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* MEDIA SCREENS-----------------------------------------------------------------*/
