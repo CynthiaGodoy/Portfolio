@@ -46,6 +46,4 @@ https://cynthiagodoy.github.io/Portfolio/
 ## Screenshot
 ![](images/PortfolioScreenshot.PNG)
 
-![](images/PortfolioScreenshot2.PNG)
-
 ![](images/PortfolioScreenshot3.PNG)
