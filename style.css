@@ -24,12 +24,18 @@ body { /* ENTIRE WEBSITE */
   font-weight: bold;
 }
 
-.nav-item { /*UL CLASS TEXT A*/
-  color: #333333;
+.navbar-nav { /*UL CLASS LIST*/
   text-decoration: none;
+  color: chocolate;
+
 }
 
-.navbar-item:hover { /*UL CLASS TEXT A HOVER*/
+/* li .nav-item { /*UL CLASS TEXT A
+  color: #333333;
+  text-decoration: none;
+} */
+
+li .nav-item:hover { /*UL CLASS TEXT A HOVER*/
   text-decoration: none;
   color: chocolate;
 }
@@ -161,7 +167,7 @@ p {
 
 .overlay { /*OVERLAY LOCATION OVER WORK IMAGES*/
   position: absolute;
-  top: 45%;
+  top: 38%;
   left: 19%;
   width: 60%;
   background-color: white;
@@ -187,6 +193,36 @@ p {
   color: #333333;
   font-weight: bold;
   text-decoration: none;
+}
+
+
+.overlay-gitHub { /*OVERLAY LOCATION OVER WORK IMAGES*/
+  position: absolute;
+  bottom: 3%;
+  right: 0%;
+  width: 14%;
+  background-color: chocolate;
+  opacity: 60%;
+  padding-top: .05%;
+  padding-bottom: 1.30%;
+}
+
+.overlay-gitHub a { /*REMOVE UNDERLINE*/
+  text-decoration: none;
+  list-style: none;
+}
+
+.overlay-gitHub:hover { 
+  opacity: 90%; 
+} 
+
+.overlay-gitHub h6 {
+  color: white;
+  /* font-weight: bold; */
+  text-decoration: none;
+  font-size: 12px;
+  text-align: center;
+  margin-left: 15%;
 }
 
 .border { 

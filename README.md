@@ -1,8 +1,8 @@
-# Bootstrap: Portfolio
+# 02 Advanced CSS: Portfolio
 
 ## Project Description
 
-Apply flex-box, media queries, and CSS variables in a deployed portfolio page that will eventually link to other deployed projects.
+Apply bootstrap, media queries, and CSS variables in a deployed portfolio page that will eventually link to other deployed projects.
 
 ## Main Objective
 
@@ -14,36 +14,22 @@ Build a portfolio page from scratch to showcase skills and talents to employers 
 
 ✅Navbar UI scrolls to the corresponding section. Home, About, Work, Skills and Contact.
 
-✅Included in the work section is a CSS grid with first image being larger in size than the other 
+✅Included in the work section is a grid with first image being larger in size than the other 
 
-✅When images are clicked, it deploys to other applications/deployed work.
+✅When images are clicked, it deploys to other applications/deployed work. Also include gitHub links.
 
 ✅The page works with various screen sizes and is a responsive layout that adapts to a viewport size.
 
 ✅Repository contains multiple descriptive commit messages, contains a README with a link to deployed project, and Screenshot.
 
-## Items Updated in Project
-
-📝 Add photo to the `About` section
-
-📝 Updated resume link.
-
-📝 Link to at least 2 deployed projects.
-
-📝 Add profile picture to GitHub.
-
-📝 Follow 2 classmates on GitHub.
-
-📝 Update to 2 screenshots of the portfolio page.
-
-📝 Update `navbar` to be collapsible.
-
-📝 Bootstrap items so page is more responsive.
+✅Include resume link, gitHub profile link, and Linkedin profile link.
 
 ## Live URL
 https://cynthiagodoy.github.io/Portfolio/
 
 ## Screenshot
 ![](images/PortfolioScreenshot.PNG)
+
+![](images/PortfolioScreenshot2.PNG)
 
 ![](images/PortfolioScreenshot3.PNG)
